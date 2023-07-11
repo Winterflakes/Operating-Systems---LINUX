@@ -139,7 +139,7 @@ void printFileStatus(const char* filename) {
     printf("File status:\n");
     printf("File Size: %ld bytes\n", fileStat.st_size);
     printf("Number of Links: %ld\n", fileStat.st_nlink);
-    printf("File Permissions: %o\n", fileStat.st_mode & (S_IRWXU | S_IRWXG | S_IRWXO));
+    printf("File Permissions: %o\n", fileStat.st_mode & (S_IRWXU|S_IRWXG|S_IRWXO));
 }
 
 // Function to print file status using fstat
