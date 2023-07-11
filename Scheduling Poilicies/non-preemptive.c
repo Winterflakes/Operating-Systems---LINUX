@@ -43,12 +43,7 @@ void displayGanttChart(struct Process processes[], int n) {
     printf("\nGantt Chart:\n");
 
     for (int i = 0; i < n; i++) {
-        printf("P%d ", i + 1);
-    }
-    printf("\n");
-
-    for (int i = 0; i < n; i++) {
-        printf("| ");
+        printf("P%d | ", i + 1);
     }
     printf("\n");
 
@@ -59,7 +54,7 @@ void displayGanttChart(struct Process processes[], int n) {
             completionTime = processes[i].arrivalTime;
         }
 
-        printf("%d  ", completionTime);
+        printf("%d    ", completionTime);
         completionTime += processes[i].burstTime;
     }
 

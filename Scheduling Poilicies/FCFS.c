@@ -7,6 +7,7 @@ struct Process {
     int turnaroundTime;
 };
 
+//wt=tat-at
 void calculateWaitingTime(struct Process processes[], int n) {
     processes[0].waitingTime = 0;
 
@@ -18,7 +19,7 @@ void calculateWaitingTime(struct Process processes[], int n) {
         }
     }
 }
-
+//tat=ct-at
 void calculateTurnaroundTime(struct Process processes[], int n) {
     for (int i = 0; i < n; i++) {
         processes[i].turnaroundTime = processes[i].burstTime + processes[i].waitingTime;
@@ -45,14 +46,14 @@ void displayGanttChart(struct Process processes[], int n) {
     printf("\nGantt Chart:\n");
 
     for (int i = 0; i < n; i++) {
-        printf("P%d ", i + 1);
+        printf("P%d  | ", i + 1);
     }
     printf("\n");
 
     int currentTime = 0;
 
     for (int i = 0; i < n; i++) {
-        printf("%d  ", currentTime);
+        printf("%d     ", currentTime);
         currentTime += processes[i].burstTime;
     }
 
