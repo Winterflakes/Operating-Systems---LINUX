@@ -1,0 +1,19 @@
+Enter the number of memory blocks: 5
+Enter the number of files: 4
+Enter the sizes of the memory blocks:
+100
+500
+200
+300
+600
+Enter the sizes of the files:
+212
+417
+112
+426
+
+File No.        File Size       Block No.
+ 1              212             2
+ 2              417             5
+ 3              112             2
+ 4              426             Not Allocated
