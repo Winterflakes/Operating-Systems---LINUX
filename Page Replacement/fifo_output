@@ -1,0 +1,19 @@
+
+Enter the number of frames: 3
+Enter the number of pages: 7
+Enter the page reference string:
+1
+2
+3
+3
+2
+4
+7
+Page reference: 1 - Frames: 1 -1 -1 
+Page reference: 2 - Frames: 1 2 -1 
+Page reference: 3 - Frames: 1 2 3 
+Page reference: 3 - Frames: 1 2 3 
+Page reference: 2 - Frames: 1 2 3 
+Page reference: 4 - Frames: 4 2 3
+Page reference: 7 - Frames: 4 7 3
+Total page faults: 5
