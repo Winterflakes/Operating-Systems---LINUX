@@ -120,8 +120,7 @@ void recover_deadlock()
                     break;
                 }
             }
-            if (
-                unmet_needs)
+            if (unmet_needs)
             {
                 process_id = i;
                 break;
