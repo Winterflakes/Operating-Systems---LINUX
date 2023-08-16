@@ -34,8 +34,7 @@ bool is_safe_state()
                     if (need[i][j] > work[j])
                         break;
                 }
-                if (
-                    j == num_resources)
+                if (j == num_resources)
                 {
                     // Process i can be finished
                     for (int k = 0; k < num_resources; k++)
